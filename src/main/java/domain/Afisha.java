@@ -11,5 +11,4 @@ public class Afisha {
         this.name = name;
         this.genre = genre;
     }
-
 }

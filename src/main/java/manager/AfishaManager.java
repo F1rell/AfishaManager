@@ -9,7 +9,6 @@ public class AfishaManager {
     public AfishaManager(int defaultLength) {
         this.defaultLength = defaultLength;
     }
-
     public AfishaManager() {
         this.defaultLength = 10;
     }
@@ -19,7 +18,6 @@ public class AfishaManager {
         System.arraycopy(items, 0, tmp, 0, items.length);
         tmp[tmp.length - 1] = newItem;
         this.items = tmp;
-
     }
 
     public Afisha[] findAll() {
@@ -36,7 +34,7 @@ public class AfishaManager {
         Afisha[] tmp = new Afisha[resultLength];
         for (int i = 0; i < tmp.length; i++) {
             tmp[i] = items[items.length - 1 - i];
-            }
-            return tmp;
+        }
+        return tmp;
     }
 }
